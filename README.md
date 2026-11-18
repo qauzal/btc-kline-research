@@ -25,7 +25,16 @@ Read them in order; each one opens with what it does and ends with a summary of 
 | [`04_features_pca_sizing`](notebooks/04_features_pca_sizing.ipynb) | Extension: deseasonalised regimes, 64 causal features, Bonferroni screening, PCA, time-of-day test, execution delay, position sizing |
 | [`05_leakage_audit`](notebooks/05_leakage_audit.ipynb) | 13 checks, layer by layer, that the result is not look-ahead or a backtest artefact |
 
+## Slides
+
+| Deck | What it covers |
+|---|---|
+| [`BTC USDT Strategy Research`](docs/BTC%20USDT%20Strategy%20Research.pptx) | The results: data, strategy, where the Sharpe comes from, leakage audit |
+| [`ATOMS Technical Walkthrough`](docs/ATOMS%20Technical%20Walkthrough.pptx) | How the ATOMS model-selection tournament works and how it is implemented here |
+
 ## Run it
+
+Tested with Python 3.10; `requirements.txt` pins the package versions used for the saved outputs.
 
 ```bash
 pip install -r requirements.txt
@@ -55,6 +64,7 @@ src/btc/evaluate.py       OOS R², bootstrap Sharpe interval
 src/btc/plotting.py       chart style
 scripts/leakage_audit.py  the leakage checks as a standalone script
 notebooks/                the analysis, in order
+docs/                     the two slide decks
 data/                     created on first run (not committed)
 ```
 
