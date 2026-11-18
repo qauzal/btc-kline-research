@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy
+pyarrow
+requests
+matplotlib
+jupyter
+scikit-learn
+statsmodels
+hmmlearn
+scipy
